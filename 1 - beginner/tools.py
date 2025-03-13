@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from dotenv import find_dotenv, load_dotenv
 import logging
 
-logging.basicConfig(level=logging.DEBUG,
+logging.basicConfig(level=logging.WARNING,
                     format='%(asctime)s - %(levelname)s - %(filename)s:%(funcName)s:%(lineno)d - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
 
