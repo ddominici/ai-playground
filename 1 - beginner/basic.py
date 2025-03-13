@@ -1,3 +1,8 @@
+# -----------------------------------------------------------------------------
+# Basic example
+# Create a chat with a LLM to ask a joke about Python
+# -----------------------------------------------------------------------------
+
 import os
 
 from openai import OpenAI
@@ -26,7 +31,7 @@ completion = client.chat.completions.create(
         {"role": "system", "content": "You're a helpful assistant."},
         {
             "role": "user",
-            "content": "Write a joke about the Go programming language.",
+            "content": "Write a joke about the Python programming language.",
         },
     ],
 )
