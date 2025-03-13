@@ -9,12 +9,12 @@ load_dotenv(find_dotenv())
 # Retrieving parameters from environment variables
 # -----------------------------------------------------------------------------
 
-os.environ["OPENAI_API_KEY"] = str(os.getenv("OPENAI_API_KEY"))
-if os.environ["OPENAI_API_KEY"] == "":
+my_api_key = str(os.getenv("OPENAI_API_KEY"))
+if my_api_key == "":
     print("No OpenAI API Key found!")
     exit(0)
 
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+client = OpenAI(api_key=my_api_key)
 
 # -----------------------------------------------------------------------------
 # Call the model
